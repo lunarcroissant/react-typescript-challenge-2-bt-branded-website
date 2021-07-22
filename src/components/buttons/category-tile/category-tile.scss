@@ -1,0 +1,41 @@
+@import '../../styles/functions';
+@import '../../styles/variables';
+
+.category-tile-item {
+    all: unset;
+    padding: 12px 5px;
+    line-height: 25px;
+    min-width: 165.8px;
+    color: bt-colours('primary');
+    border: 1px solid bt-colours('primary');
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+        background: bt-colours('primary');
+        color: bt-colours('light');
+    }
+
+    &__label:hover {
+        text-decoration: underline;
+    }
+
+    &__container {
+        margin: 10px 0;
+        padding: 12px;
+    }
+}
+
+// Mobile
+
+@media screen and (max-width: 768px) {
+    .category-tile-item {
+        width: 100%;
+        padding: 12px 0;
+
+        &__container {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}

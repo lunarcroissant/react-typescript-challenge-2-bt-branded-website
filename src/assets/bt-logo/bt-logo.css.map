@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,mBAAmB,CAAC;EAChB,MAAM,EAAE,CAAC;EACT,MAAM,EAAE,IAAI;EACZ,YAAY,EAAE,IAAI;EAClB,cAAc,EAAE,KAAK;EACrB,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "bt-logo.scss"
+    ],
+    "names": [],
+    "file": "bt-logo.css"
+}

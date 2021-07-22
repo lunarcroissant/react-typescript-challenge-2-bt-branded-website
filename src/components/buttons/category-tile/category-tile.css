@@ -1,0 +1,37 @@
+@use "sass:map";
+.category-tile-item {
+  all: unset;
+  padding: 12px 5px;
+  line-height: 25px;
+  min-width: 165.8px;
+  color: #5514b4;
+  border: 1px solid #5514b4;
+  cursor: pointer;
+  text-align: center;
+}
+
+.category-tile-item:hover {
+  background: #5514b4;
+  color: #ffffff;
+}
+
+.category-tile-item__label:hover {
+  text-decoration: underline;
+}
+
+.category-tile-item__container {
+  margin: 10px 0;
+  padding: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .category-tile-item {
+    width: 100%;
+    padding: 12px 0;
+  }
+  .category-tile-item__container {
+    width: 100%;
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=category-tile.css.map */

@@ -1,0 +1,183 @@
+@import '../styles/mixins';
+@use '../styles/animations';
+
+.bt-product-card {
+    @include planCard;
+    animation: fadeUp 1000ms ease-in-out;
+    
+}
+
+@keyframes fadeUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    } 100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.device-card {
+    
+    &__device-name {
+    padding: 1.25rem .625rem;
+    font-family: bt_legacy_light,bt_legacy_regular,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple colour Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto colour Emoji;
+    font-size: 25px;
+    font-size: 1.5625rem;
+    letter-spacing: -.5px;
+    background-color: #fff;
+    color: #5514b4;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    border-radius: .625rem .625rem 0 0;
+    overflow: hidden;
+    z-index: 0;
+    font-weight: 400;
+    }
+
+    &__device-info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-grow: 1;
+    }
+
+    &__visualiser {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        // align-items: center;
+        flex-grow: 1;
+        background-color: #fff;
+    }
+
+    &__visualiser-images {
+
+        
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // vertical-align: middle;
+        
+        position: relative;
+        white-space: nowrap;
+        z-index: 1;
+        height: 200px;
+
+    }
+
+    &__visualiser-back-view {
+        position: absolute;
+        left: -10%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        // width: 5.3125rem;
+        // vertical-align: middle;
+        
+
+        img {
+            // width: auto;
+            // height: 60%;
+            width: 5.3125rem;
+            height: auto;
+        }
+    
+    }
+    
+    &__visualiser-front-view {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        left: 10%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        // width: auto;
+        // height: 100%;
+        // width: 5.9375rem;
+        // height: auto;
+        
+
+        img {
+            width: 5.9375rem;
+            height: auto;
+        }
+    }
+
+    &__plan-details {
+        list-style: none;
+    }
+
+    &__monthly-details {
+
+        position: relative;
+
+        &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 7px;
+            height: 12px;
+            top: 4px;
+            left: 4px;
+            border-color: #008a00;
+            border-style: solid;
+            border-width: 0 2px 2px 0;
+            transform: rotate(
+        45deg
+        );
+        }
+    }
+
+    &__monthly-cost {
+        margin: 10px 0 20px 0;
+    }
+
+    &__price {
+        background-color: #eee;
+        border-radius: 0 0 10px 10px;
+        padding: 1.25rem;
+        margin-top: -.9375rem;
+        z-index: 0;
+    }
+
+    &__hero-price {
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    &__compare-field {
+
+        justify-content: center;
+        margin: 8px;
+        // display: inline-block;
+
+        &-label {
+            // margin: 0 0 0 8px;
+        }
+    }
+
+    &__cta-actions {
+        height: auto;
+        margin-top: 1em;
+    }
+
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 1199px) {
+    .device-card {
+        &__cta-actions {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}

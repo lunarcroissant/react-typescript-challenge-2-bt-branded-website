@@ -1,0 +1,50 @@
+@use "sass:map";
+
+// BT Colours
+
+$bt-colours: (
+    'primary': #5514b4,
+    'secondary': #6400aa,
+    'secondary-hover': #540e85,
+    'accent': #e60050,
+    'accent-hover': #c30d4c,
+    'light': #ffffff,
+    'dark': #333333,
+    'black': #000000,
+    'faint-grey': #f1f1f1,
+    'light-grey': #eeeeee,
+    'middle-grey': #dddddd,
+    'dark-grey': #666666, /* toggle on mobile phones gallery */
+    'pink': #ff6eff,
+    'neon-pink': #f201f5,
+) !default;
+
+// Border Radius
+
+$bt-radius-standard-px: 5px;
+$bt-radius-standard-rem: .3125rem;
+
+// Min widths & Heights
+
+$btn-min-width-px: 80px;
+$btn-min-width-rem: 5rem;
+
+// Padding
+
+$padding: (
+    '20-horizontal': 0 20px 0,
+) !default;
+$btn-padding-horizontal: 0 20px;
+
+// Sizes
+
+$header-height: 80px;
+$footer-height: 50px;
+
+$btn-height: 50px;
+
+// Font 
+
+$body-font-size-desktop: 16px;
+
+

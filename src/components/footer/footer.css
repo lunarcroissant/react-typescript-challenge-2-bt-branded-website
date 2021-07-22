@@ -1,0 +1,16 @@
+@use "sass:map";
+.bt-footer {
+  color: #ffffff;
+  background-color: #5514b4;
+  text-align: left;
+  line-height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .bt-footer {
+    line-height: 2;
+    padding: 20px 0;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

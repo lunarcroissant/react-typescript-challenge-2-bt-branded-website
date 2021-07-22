@@ -1,0 +1,12 @@
+// Get BT colours from map
+
+@function bt-colours($key: light) {
+    @return map-get($bt-colours, $key);
+}
+
+// Get minimum page height
+
+@function remaining-page-height($top: $header-height, $bottom: $footer-height) {
+    $header-and-footer-height: $header-height + $footer-height;
+    @return $header-and-footer-height;
+}

@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+@import '../../styles/functions';
+
+.bt-primary-button {
+    @include bt-button;
+    background-color: bt-colours('secondary');
+    color: bt-colours('light');
+    text-decoration: none;
+
+    &:hover {
+        background-color: bt-colours('secondary-hover');
+    }
+}

@@ -1,0 +1,56 @@
+@import './variables';
+
+// Buttons
+
+@mixin bt-button {
+
+    padding: $btn-padding-horizontal;
+    height: $btn-height;
+    font-size: $body-font-size-desktop;
+    border: 1px solid;
+    border-radius: $bt-radius-standard-rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: $btn-min-width-rem;
+    min-height: 2.5rem;
+
+    // margin-bottom: 0;
+    margin: 8px;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    line-height: 1.42857;
+    user-select: none;
+    
+}
+
+// TEST
+
+@mixin button($display, $alignment, $color, $background) {
+
+    #{$display}: $alignment;
+    color: $color;
+    background-color: $background;
+    
+}
+
+@mixin planCard {
+    display: flex;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    flex-direction: column;
+    margin: .9375rem .625rem;
+    border: 1px solid #ddd;
+    // box-shadow: 0 4px 4px rgb(0, 0, 0, 25%);
+    margin: 15px 10px;
+    border-radius: 10px;
+    border-radius: .625rem;
+    // min-width: 200px;
+    max-width: 350px;
+    // max-width: 21.875rem;
+    // width: 100%;
+}

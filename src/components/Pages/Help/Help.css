@@ -1,0 +1,6 @@
+@use "sass:map";
+@use "sass:map";
+.main-column-container {
+  min-height: calc(100vh - 130px);
+}
+/*# sourceMappingURL=Help.css.map */

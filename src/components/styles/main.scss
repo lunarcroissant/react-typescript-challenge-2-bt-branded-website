@@ -1,0 +1,176 @@
+
+/* BT Brand Assets */
+
+$primary: #5514b4;
+$secondary: #6400aa;
+$accent: #e60050;
+$light: #ffffff;
+$dark: #333333;
+$black: #000000;
+$light-grey: #eeeeee;
+$middle-grey: #dddddd;
+$dark-grey: #666666; /* toggle on mobile phones gallery */
+$pink: #ff6eff;
+$neon-pink: #f201f5;
+$radius-standard-px: 5px;
+$radius-standard-rem: .3125rem;
+$btn-min-width-px: 80px;
+$btn-min-width-rem: 5rem;
+$btn-padding-horizontal: 0 20px 0;
+$btn-height: 40px;
+
+$bt-standard-font: "bt_font_regular","Calibri","Arial",sans-serif;
+$body-font-size-desktop: 16px;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+b, strong {
+    font-weight: bold;
+
+}
+
+.padding-bottom-20 {
+    padding-bottom: 20px;
+}
+
+.padding-vertical-20 {
+    padding: 20px 0;
+}
+
+h2 {
+    color: $primary;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: "bt_font_light","Calibri","Arial",sans-serif;
+}
+
+
+body {
+    background-color: $light;
+    font-family: "bt_font_regular","Calibri","Arial",sans-serif;
+    color: $dark;
+    // font-size: 16px;
+    line-height: 21px;
+}
+    
+
+.btn {
+    padding: $btn-padding-horizontal;
+    height: $btn-height;
+    font-size: $body-font-size-desktop;
+    border: 1px solid;
+    border-radius: $radius-standard-rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: $btn-min-width-rem;
+    min-height: 2.5rem;
+
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    line-height: 1.42857;
+    user-select: none;
+}
+
+.secondary-btn {
+    @extend .btn;
+    background: $light;
+    border: 1px solid $secondary;
+    color: $accent;
+}
+
+.primary-btn {
+    @extend .btn;
+    background: $accent;
+    color: $light;
+    border: 1px solid transparent;
+}
+
+.bt-link {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.bt-navbar-global-nav-link {
+    font-size: 18px;
+    line-height: 80px;
+    // padding: 0 30px 30px 10px;
+    // padding: 0 30px 0px 10px;
+    color: $light;
+    text-decoration: none;
+    list-style: none;
+
+    &:hover {
+
+        color: bt-colours('primary');
+
+    }
+
+    &--bold {
+
+        @extend .bt-navbar-global-nav-link;
+        font-weight: 800;
+
+    }
+
+    &--selected {
+
+        @extend .bt-navbar-global-nav-link;
+        font-weight: 800;
+        border-bottom: 1px solid $light;
+
+    }
+    
+}
+
+.bt-footer {
+    font-size: 14px;
+    color: $light;
+    font-family: $bt-standard-font;
+
+    &__item {
+
+        margin: 0 30px 0 0;
+
+    }
+    
+}
+
+.bt-product-card {
+    display: flex;
+    flex-direction: column;
+    margin: .9375rem .625rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    border-radius: .625rem;
+    max-width: 21.875rem;
+
+    &__title {
+        font-size: 1.5625rem;
+        letter-spacing: -.5px;
+        color: $primary;
+        text-align: center;
+        background-color: $light;
+        border-radius: .625rem .625rem 0 0;
+        padding: 1.25rem .625rem;
+        overflow: hidden;
+    }
+
+    &__price {
+        color: $light;
+    }
+}
+
+

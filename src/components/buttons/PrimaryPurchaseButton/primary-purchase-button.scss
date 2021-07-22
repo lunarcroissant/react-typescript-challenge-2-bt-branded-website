@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+@import '../../styles/functions';
+@import '../../styles/mixins';
+
+.bt-primary-purchase-btn {
+    @include bt-button;
+
+    background-color: bt-colours('accent');
+    color: bt-colours('light');
+    text-decoration: none;
+
+    &:hover {
+        background-color: bt-colours('accent-hover');
+        text-decoration: none;
+    }
+
+}
+
+.bt-btn {
+    font-weight: 700;
+}

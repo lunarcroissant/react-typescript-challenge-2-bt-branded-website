@@ -1,0 +1,46 @@
+@use "sass:map";
+@use "sass:map";
+.two-col-shout {
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.two-col-shout__image-container {
+  max-height: 400px;
+  overflow: hidden;
+  max-width: 90vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.two-col-shout__image-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.two-col-shout__text {
+  padding: 20px 0;
+}
+
+.two-col-shout__text p {
+  margin-top: 1em;
+}
+
+.two-col-shout__text b {
+  font-weight: 200;
+}
+
+.two-col-shout__action-btn--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 62em) {
+  .two-col-shout__action-btn--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=two-col-shout.css.map */

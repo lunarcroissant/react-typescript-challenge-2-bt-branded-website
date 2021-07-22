@@ -1,0 +1,76 @@
+@import '../styles/variables';
+@import '../styles/global';
+@import '../styles/functions';
+
+@use "sass:map";
+
+
+
+.bt-navbar-top-menu {
+    background-color: #5514b4;
+    color: bt-colours('light');
+    
+}
+
+.bt-navbar-menu-container {
+    width: 100vw;
+    background-color: #5514b4;
+}
+
+.bt-navbar-global-nav-link {
+    font-size: 18px;
+    line-height: 80px;
+    // padding: 0 30px 30px 10px;
+    // padding: 0 30px 10px 10px;
+    // margin-bottom: 20px;
+    color: bt-colours('light');
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+
+    &:hover {
+
+        // color: bt-colours('primary');
+        // border-bottom: bt-colours('light') 1px solid;
+        
+
+    }
+
+    &--bold {
+
+        @extend .bt-navbar-global-nav-link;
+        // font-weight: 800;
+
+    }
+
+    &--selected {
+
+        @extend .bt-navbar-global-nav-link;
+        // font-weight: 800;
+        // border-bottom: 1px solid bt-colours('light');
+
+    }
+    
+}
+
+.bt-navbar-text {
+    font-size: 18px;
+    
+}
+
+.bt-link {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+// Mobile
+
+@media screen and (max-width: 768px) {
+    .bt-navbar-top-menu {
+        color: bt-colours('light');
+    }
+}
+
