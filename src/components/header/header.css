@@ -32,6 +32,8 @@
 
 .bt-link {
   text-decoration: none;
+  list-style: none;
+  line-height: 1.5;
 }
 
 .bt-link:hover {

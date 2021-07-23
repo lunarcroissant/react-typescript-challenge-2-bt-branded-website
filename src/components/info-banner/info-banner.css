@@ -6,6 +6,10 @@
   padding: 30px 0;
 }
 
+.bt-info-banner p {
+  line-height: 1.5;
+}
+
 @media screen and (max-width: 62em) {
   .bt-info-banner p {
     padding: 0;

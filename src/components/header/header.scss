@@ -28,27 +28,16 @@
     list-style: none;
     cursor: pointer;
 
-    &:hover {
-
-        // color: bt-colours('primary');
-        // border-bottom: bt-colours('light') 1px solid;
-        
-
-    }
 
     &--bold {
 
         @extend .bt-navbar-global-nav-link;
-        // font-weight: 800;
 
     }
 
     &--selected {
 
         @extend .bt-navbar-global-nav-link;
-        // font-weight: 800;
-        // border-bottom: 1px solid bt-colours('light');
-
     }
     
 }
@@ -60,6 +49,8 @@
 
 .bt-link {
     text-decoration: none;
+    list-style: none;
+    line-height: 1.5;
 
     &:hover {
         text-decoration: none !important;

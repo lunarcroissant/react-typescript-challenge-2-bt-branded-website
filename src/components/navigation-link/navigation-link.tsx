@@ -1,22 +1,22 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/flexboxgrid.css';
-// import '../styles/main.css';
+
 import './navigation-link.css';
 
 interface IProps {
     displayText?: string;
     showChevron?: string;
+    pageLink: string;
 }
 
-const NavigationLink = ({displayText, showChevron}: IProps): JSX.Element => {
+const NavigationLink = ({displayText, showChevron, pageLink}: IProps): JSX.Element => {
     return (
-        <li className="bt-navbar-screen-md-main bt-navbar-global-nav-link-item middle-xs">
-            
-            <a className="bt-navbar-global-nav-link middle-xs">
-                <span className={`bt-navbar-global-nav-link-text middle-xs ${showChevron}`}>{displayText}</span>
-            </a>
         
-        </li>
+            
+            <Link className="bt-navbar-global-nav-link middle-xs" to={pageLink}>
+                <span className={`bt-navbar-global-nav-link-text middle-xs ${showChevron}`}>{displayText}</span>
+            </Link>
+        
     )
 }
 

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import CategoryTile from '../../buttons/category-tile/category-tile';
+
 import HorizontalDivider1 from '../../horizontal-divider-1/horizontal-divider-1';
 import TwoColShout from '../../row-section/two-col-shout';
 

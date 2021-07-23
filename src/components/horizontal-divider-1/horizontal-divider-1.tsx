@@ -1,4 +1,3 @@
-import React, { FunctionComponent, ComponentElement } from 'react';
 import './horizontal-divider-1.css';
 
 

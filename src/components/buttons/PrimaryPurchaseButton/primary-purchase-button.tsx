@@ -12,8 +12,8 @@ export interface PrimaryPurchaseButtonProps {
 const PrimaryPurchaseButton: React.FunctionComponent<PrimaryPurchaseButtonProps> = ({buttonCTA, PDPLink}: PrimaryPurchaseButtonProps) => {
     return ( 
         
-        <Link className="bt-primary-purchase-btn" to={`/${PDPLink}`}>
-            <a className="bt-btn">{buttonCTA}</a>
+        <Link className="bt-primary-purchase-btn bt-btn" to={`/${PDPLink}`}>
+            {buttonCTA}
         </Link>
      );
 }

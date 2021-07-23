@@ -27,7 +27,7 @@
 }
 
 .bt-navbar-global-nav-link-text:hover {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid;
 }
 
 .bt-navbar-global-nav-link-text--selected {

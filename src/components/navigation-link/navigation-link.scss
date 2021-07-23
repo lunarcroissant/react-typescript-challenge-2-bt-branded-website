@@ -31,13 +31,12 @@
     text-decoration: none;
 
     &:hover {
-        border-bottom: 1px solid bt-colours('light');
+        border-bottom: 1px solid bt-colours('lixght');
     
     }
 
     &--selected {
         font-weight: 800;
-        // border-bottom: 1px solid bt-colours('light');
     }
 
     &.show-chevron {

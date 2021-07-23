@@ -1,16 +1,10 @@
 import React from 'react';
-import PrimaryButton from '../buttons/PrimaryPurchaseButton/primary-purchase-button';
 import { Link } from 'react-router-dom';
 import './product-card.css';
 import '../styles/flexboxgrid.css';
 import '../styles/main.css';
 import PrimaryPurchaseButton from '../buttons/PrimaryPurchaseButton/primary-purchase-button';
-// import PhoneFront from '../../assets/images/Oppo-A53-black-sm-front.png';
-// import phoneFront2 from '/assets/images/Oppo-A53-black-sm-front.png';
-// import phoneFront2 from '../../assets/images/Oppo-A53-black-sm-front.png';
-// import phoneBack2 from '../../assets/images/Oppo-A53-black-sm-back.png';
-// import test from '../../../assets/images/device-5-back.png';
-// import test2 from '../../assets'
+
 
 interface PlanCardProps {
     planName: string;
@@ -26,8 +20,6 @@ interface PlanCardProps {
     frontImageAlt: string;
 }
 const PlanCard: React.FunctionComponent<PlanCardProps> = ({planName, name, data, texts, minutes, price, productCTA, rearImage, frontImage, rearImageAlt, frontImageAlt}: PlanCardProps) => {
-
-    console.log(frontImage);
     
     return (
         <div className="bt-product-card">

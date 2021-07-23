@@ -1,15 +1,10 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-// import PrimaryPurchaseButton from '../buttons/PrimaryPurchaseButton/primary-purchase-button';
 import PrimaryButton from '../buttons/PrimaryButton/primary-button';
 
 import './two-col-shout.css';
 import '../styles/main.css';
 import '../styles/flexboxgrid.css';
-
-// import '../../assets/images/'
-
-// src={`../../assets/images/${imgSource}`}
 
 
 interface IProps {
